@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stop the Hate — Volunteer</title>
+  </head>
+  <body>
+    <div id="topNav">
+      <a href="index.html">Home</a>
+      <a href="report.html">Report A Hate Crime</a>
+      <a href="request.html">Request Assistance</a>
+      <a class="active" href="volunteer.html">Volunteer</a>
+    </div>
+
+    <div class="content">
+      <div class="row">
+        <div class="column2">
+          <h1 style="text-align: center;">
+            Would you like to dedicate some of your time and STOP THE HATE?<br />
+            Fill out this form to volunteer and help put an end to hate crimes:
+          </h1>
+
+          <div class="spacing1"></div>
+
+          <h3>
+            Please provide your name so we can reach out for more information.
+          </h3>
+          <form>
+            <label for="fname">First name:</label><br />
+            <input
+              type="text"
+              autocomplete="off"
+              id="fname"
+              name="fname"
+            /><br />
+            <label for="lname">Last name:</label><br />
+            <input type="text" autocomplete="off" id="lname" name="lname" />
+          </form>
+
+          <div class="spacing2"></div>
+
+          <h3>
+            Please provide a phone number or an email address so we can contact
+            you.
+          </h3>
+          <form>
+            <label for="contact"
+              >Phone number ((XXX) XXX-XXXX)/Email address</label
+            ><br />
+            <input
+              type="text"
+              autocomplete="off"
+              id="contact"
+              name="contact"
+            /><br />
+          </form>
+
+          <div class="spacing2"></div>
+
+          <h3>
+            Please provide your age.
+          </h3>
+          <form>
+            <label for="age">Age:</label><br />
+            <input type="number" autocomplete="off" id="age" name="age" /><br />
+          </form>
+
+          <div class="spacing2"></div>
+
+          <h3>
+            Where are you located?
+          </h3>
+          <form>
+            <label for="place">(City, State)</label><br />
+            <input
+              type="text"
+              autocomplete="off"
+              id="place"
+              name="place"
+            /><br />
+          </form>
+
+          <div class="spacing2"></div>
+
+          <h3>
+            How would you like to help out? (You may select more than one.)
+          </h3>
+
+          <form style="display: inline-block; text-align: left;">
+            <input type="checkbox" id="buyfood" name="buyfood" value="Food" />
+            <label for="foodelivery"
+              >Buy and deliver groceries for someone</label
+            ><br />
+            <input
+              type="checkbox"
+              id="accompany"
+              name="accompany"
+              value="companion"
+            />
+            <label for="accompany"
+              >Accompany someone around town as a safety aid</label
+            ><br />
+            <input type="checkbox" id="donate" name="donate" value="donate" />
+            <label for="donation">Donate to the organization</label><br />
+            <input type="checkbox" id="join" name="join" value="join" />
+            <label for="join">Join and become a member of STOP THE HATE!</label
+            ><br />
+
+            <input
+              type="checkbox"
+              id="different"
+              name="different"
+              value="different"
+            />
+            <label for="different">Other</label><br />
+          </form>
+
+          <div class="spacing2"></div>
+
+          <h3>
+            If you selected "Other", please provide more information:
+          </h3>
+          <form>
+            <label for="type"></label><br />
+            <textarea
+              rows="5"
+              cols="60"
+              id="helps"
+              autocomplete="off"
+            ></textarea>
+          </form>
+
+          <div class="spacing2"></div>
+
+          <h3>
+            Anything else you'd like to add?
+          </h3>
+          <form>
+            <label for="type"></label><br />
+            <textarea rows="5" cols="50" id="why" autocomplete="off"></textarea>
+          </form>
+
+          <div class="spacing1"></div>
+
+          <!-- Trigger/Open The Modal -->
+          <button
+            id="myBtn"
+            style="padding: 20px;
+  background-color: #1A936F;
+  border: none;
+  color: white;
+  font-size: 18px;"
+          >
+            Submit
+          </button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>
+                Response recorded.<br /> Thank you for filling out the form! We
+                will get back to you soon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="notice">
+      STOP THE HATE 2021
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
